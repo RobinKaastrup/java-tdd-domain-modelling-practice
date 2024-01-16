@@ -4,6 +4,8 @@ import com.booleanuk.StudentSelector;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
+import java.util.Random;
+
 public class StudentSelectorTest {
     @Test
     public void showOptionsTest() {
@@ -17,6 +19,11 @@ public class StudentSelectorTest {
         }
 
         Assertions.assertEquals(userOptionsShouldBe, studentSelector.showOptions());
+
+    }
+
+    public void getRandomStudentTest() {
+        Random randomizer = new Random(681);
 
     }
 }
